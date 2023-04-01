@@ -21,7 +21,7 @@ The complete ChatGPT4 prompt history for the game is available [here](prompt.txt
 
 ### Cover image
 
-![Aria Starblade](images/player.jpg)
+![Aria Starblade](screenshots/player.jpg)
 
 ### Game play
 
