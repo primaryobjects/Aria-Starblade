@@ -273,8 +273,6 @@ $(function() {
     tweenToRed.start();
   }
 
-  let gameOver = false;
-
   function endGame(speed=1500) {
     playerLoseSound.play();
     battleSound.stop();
@@ -339,11 +337,6 @@ $(function() {
 
     // Start the first animation
     tweenToRed.start();
-
-    setTimeout(function() {
-      gameOver = true;
-      moveBack = false;
-    }, 3000);
   }
 
   function generateRandomPlayerName() {
@@ -391,24 +384,6 @@ $(function() {
       jiggleCamera(camera, originalPosition, speed);
     } else {
       jiggleCamera(camera, targetPosition, speed);
-    }
-
-    if (gameOver) {
-      if (moveBack) {
-        jiggleCamera(camera, originalPosition, speed);
-        if (camera.position.distanceTo(originalPosition) < 0.01) {
-            moveBack = false;
-            let x = Math.random() * 2 - 1;
-            let y = Math.random() * 2 - 1;
-            let z = Math.random() * 2 - 1;
-            targetPosition.set(x, y, z);
-        }
-      } else {
-        jiggleCamera(camera, targetPosition, speed);
-        if (camera.position.distanceTo(targetPosition) < 3) {
-            moveBack = true;
-        }
-      }
     }
 
     renderer.render(scene, camera);
