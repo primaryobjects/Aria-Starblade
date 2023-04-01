@@ -13,7 +13,7 @@ You are a fearless space heroine. Your mission is to save the universe. Attack o
 
 Inspired by the [Phantasy Star IV](https://www.bing.com/images/search?q=phantasy+star+iv+combat) combat system.
 
-## Prompts
+## ChatGPT4 Prompt
 
 The complete ChatGPT4 prompt history for the game is available [here](prompt.txt).
 
