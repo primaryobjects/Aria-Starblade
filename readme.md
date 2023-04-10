@@ -26,3 +26,11 @@ The complete ChatGPT4 prompt history for the game is available [here](prompt.txt
 ### Game play
 
 ![Aria Starblade game play](screenshots/screenshot.gif)
+
+## License
+
+MIT
+
+## Author
+
+Kory Becker http://www.primaryobjects.com/kory-becker
